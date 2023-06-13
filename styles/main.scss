@@ -1,0 +1,45 @@
+.article-container {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    a {
+        color: blue;
+    }
+
+    ul {
+        list-style: decimal;
+    }
+
+    p {
+        margin-bottom: 1rem;
+    }
+
+    blockquote {
+        // background-color: red;
+    }
+
+    table {
+        // margin: auto;
+        margin: 15px auto;
+        display: table;
+
+        tr {
+            th {
+                border: 1px solid gray;
+                padding: 8px;
+                text-align: center;
+            }
+            td {
+                border: 1px solid gray;
+                padding: 8px;
+                text-align: center;
+            }
+        }
+    }
+}
