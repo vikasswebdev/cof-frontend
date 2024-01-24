@@ -3,11 +3,10 @@ import Layout from "../components/layout";
 import HomeTop from "../components/molecules/HomeTop";
 import MobileAppSection from "../components/molecules/MobileAppSection";
 import Seo from "../components/seo";
-import { fetchAPI } from "../lib/api";
 
-export default function Home({ categories }) {
+export default function Home({}) {
   return (
-    <Layout categories={categories}>
+    <Layout>
       <Seo
         seo={{
           metaTitle: "codeoflyf - let's understand together",
@@ -22,17 +21,17 @@ export default function Home({ categories }) {
   );
 }
 
-export async function getServerSideProps(context) {
-  try {
-    const [categoriesRes] = await Promise.all([fetchAPI("/categories")]);
-    return {
-      props: {
-        categories: categoriesRes,
-      },
-    };
-  } catch (error) {
-    return {
-      notFound: true,
-    };
-  }
-}
+// export async function getServerSideProps(context) {
+//   try {
+//     const [categoriesRes] = await Promise.all([fetchAPI("/categories")]);
+//     return {
+//       props: {
+//         categories: categoriesRes,
+//       },
+//     };
+//   } catch (error) {
+//     return {
+//       notFound: true,
+//     };
+//   }
+// }

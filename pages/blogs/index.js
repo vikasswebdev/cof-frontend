@@ -4,9 +4,9 @@ import Layout from "../../components/layout";
 import Seo from "../../components/seo";
 import { fetchAPI } from "../../lib/api";
 
-const Blogs = ({ articles, categories }) => {
+const Blogs = ({ articles }) => {
   return (
-    <Layout categories={categories}>
+    <Layout>
       <Seo
         seo={{
           metaTitle: "Blogs",
@@ -26,14 +26,10 @@ export default Blogs;
 
 export async function getServerSideProps(context) {
   try {
-    const [articlesRes, categoriesRes] = await Promise.all([
-      fetchAPI("/articles"),
-      fetchAPI("/categories"),
-    ]);
+    const [articlesRes] = await Promise.all([fetchAPI("/articles")]);
     return {
       props: {
         articles: articlesRes,
-        categories: categoriesRes,
       },
     };
   } catch (error) {

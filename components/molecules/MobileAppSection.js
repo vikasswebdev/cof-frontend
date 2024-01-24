@@ -1,4 +1,3 @@
-import Link from "next/link";
 import React from "react";
 import ButtonLink from "../common/ButtonLink";
 
@@ -17,17 +16,6 @@ const MobileAppSection = () => {
               developing innovative apps has become a lucrative and highly
               sought-after skill.
             </p>
-            {/* <div className="mt-8">
-              <Link
-                href="/"
-                className="bg-black text-white py-2 px-10 rounded hover:text-black hover:bg-white hover:border-2 hover:border-black"
-              >
-                More
-              </Link>
-            </div> */}
-            {/* <div className="mt-10 hover:text-black border md:w-1/3 mr-20 md:mr-96 border-black text-center text-white hover:bg-white text-xl bg-black px-10 py-2 rounded shadow-sm">
-              <Link href="/contactus">Let&apos;s Build App</Link>
-            </div> */}
             <ButtonLink title="Let's Build" to="/contactus" />
           </div>
 

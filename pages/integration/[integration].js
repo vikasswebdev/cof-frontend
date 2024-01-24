@@ -1,8 +1,6 @@
 import React from "react";
 import Layout from "../../components/layout";
 import { fetchAPI } from "../../lib/api";
-import Link from "next/link";
-import Image from "next/image";
 import TopIntroCard from "../../components/molecules/integrations/TopIntroCard";
 
 const Integration = ({ integration }) => {
@@ -22,7 +20,6 @@ export default Integration;
 export async function getServerSideProps(context) {
   try {
     const { integration } = context.query;
-
     const integrationRes = await Promise.all([
       fetchAPI(`/integration/${integration}`),
     ]);

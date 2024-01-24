@@ -25,19 +25,6 @@ const ConnectSection = () => {
             already use and love.
           </p>
           <ButtonLink title="Learn more" to="/contactus" />
-          {/* <Link href="/">
-            <div className="flex items-center border w-fit px-4 py-1 mt-3 rounded-3xl">
-              <span> Learn more</span>
-              <div className="bg-gray-600  ml-2 w-10 h-10 flex items-center justify-center overflow-hidden rounded-full">
-                <Image
-                  src="/images/icons/span-white.png"
-                  width={15}
-                  height={15}
-                  alt="arrow"
-                />
-              </div>
-            </div>
-          </Link> */}
         </div>
       </div>
     </div>
