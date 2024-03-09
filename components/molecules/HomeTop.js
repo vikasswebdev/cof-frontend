@@ -67,7 +67,7 @@ const HomeTop = () => {
       <div className="text-center">
         <h1 className="font-bold md:text-6xl text-5xl">
           {/* Build AI  for generating more revenue */}
-          Building an <br /> AI-powered ecommerce product.
+          Building an <br /> AI-powered products.
         </h1>
         <p className="mt-5">
           We are committed to helping our clients achieve their goals and make
