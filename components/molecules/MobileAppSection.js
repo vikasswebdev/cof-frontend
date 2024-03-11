@@ -8,7 +8,7 @@ const MobileAppSection = () => {
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div className="flex-1">
             <h2 className="text-6xl md:w-3/4 font-bold">
-              Innovate your way to success with your next app
+              Innovate your way to success with your next AI-powered app
             </h2>
             <p className="md:w-1/2 mt-8 text-gray-900">
               From social media to online shopping, mobile apps have

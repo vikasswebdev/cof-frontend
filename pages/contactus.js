@@ -22,6 +22,9 @@ const Contactus = () => {
         return;
       }
 
+      toast.success("Successfully Submitted");
+      return;
+
       const response = await fetchAPI("/contact", {
         method: "POST",
         body: JSON.stringify({

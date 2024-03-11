@@ -15,7 +15,7 @@ export default function Home({}) {
       <main className="min-h-screen">
         <HomeTop />
         <MobileAppSection />
-        <ConnectSection />
+        {/* <ConnectSection /> */}
       </main>
     </Layout>
   );
