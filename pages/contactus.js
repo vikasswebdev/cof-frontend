@@ -22,8 +22,8 @@ const Contactus = () => {
         return;
       }
 
-      toast.success("Successfully Submitted");
-      return;
+      // toast.success("Successfully Submitted");
+      // return;
 
       const response = await fetchAPI("/contact", {
         method: "POST",
@@ -33,6 +33,8 @@ const Contactus = () => {
           message,
         }),
       });
+
+      console.log("response", response);
 
       if (response && response.status == 1) {
         toast.success(response.message);

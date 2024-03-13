@@ -21,18 +21,20 @@ const Nav = () => {
                 </Link>
               </li>
               <li className="bg-gray-100 rounded px-3 py-2 mb-2">
-                <Link
-                  href={`/integration`}
-                  className="mr-5 hover:text-gray-900"
-                >
-                  Integration
+                <Link href={`/ai`} className="mr-5 hover:text-gray-900">
+                  AI
                 </Link>
               </li>
               <li className="bg-gray-100 rounded px-3 py-2 mb-2">
+                <Link href={`/blockchain`} className="mr-5 hover:text-gray-900">
+                  Blockchain
+                </Link>
+              </li>
+              {/* <li className="bg-gray-100 rounded px-3 py-2 mb-2">
                 <Link href={`/blogs`} className="mr-5 hover:text-gray-900">
                   Blogs
                 </Link>
-              </li>
+              </li> */}
               <li className="bg-gray-100 rounded px-3 py-2 mb-2">
                 <Link href={`/contactus`} className="mr-5 hover:text-gray-900">
                   Contact Us
@@ -54,12 +56,15 @@ const Nav = () => {
             <Link href={`/`} className="mr-5 hover:text-gray-900">
               Home
             </Link>
-            <Link href={`/integration`} className="mr-5 hover:text-gray-900">
-              Integration
+            <Link href={`/ai`} className="mr-5 hover:text-gray-900">
+              AI
             </Link>
-            <Link href={`/blogs`} className="mr-5 hover:text-gray-900">
+            <Link href={`/blockchain`} className="mr-5 hover:text-gray-900">
+              Blockchain
+            </Link>
+            {/* <Link href={`/blogs`} className="mr-5 hover:text-gray-900">
               Blogs
-            </Link>
+            </Link> */}
             <Link href={`/contactus`} className="mr-5 hover:text-gray-900">
               Contact Us
             </Link>
